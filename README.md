@@ -1,13 +1,14 @@
 <div align="center"> <img src="thorlogo.png" width="400" alt="ThotLogo" /> </div>
-
 <div align="center">
 
 <div align="center">
 
+![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
 ![GSAP](https://img.shields.io/badge/-GSAP-88CE02?style=flat&logo=greensock&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![WebGL](https://img.shields.io/badge/-WebGL-990000?style=flat&logo=webgl&logoColor=white)
 
 </div>
 
@@ -28,6 +29,7 @@ The project simulates an official movie promotional page, presenting Thor's stor
 - Full-screen hero section with background art
 - Cinematic storytelling copy
 - Trailer and ticket call-to-action sections
+- Interactive 3D elements built with Three.js (Web3D)
 - Scroll-based animations
 - Responsive layout
 - Modern landing page structure
@@ -37,13 +39,14 @@ The project simulates an official movie promotional page, presenting Thor's stor
 * **HTML**
 * **CSS**
 * **JavaScript**
+* **Three.js** (Web3D)
 * **GSAP (GreenSock)**
-* **Web3D**
 
 ## 🎨 Features
 
 * ⚡ Hero section with logo and navigation (TRAILER, ABOUT, TICKETS)
 * 🎬 "Watch the Trailer" and "Guarantee Your Ticket" call-to-action buttons
+* 🌩️ 3D elements rendered in-browser with Three.js
 * 📖 Narrative section about Thor's story
 * 🎥 Closing section — "The Storm Arrives at Cinemas"
 * ⏳ Animated preloader
@@ -77,6 +80,7 @@ index.html
 This project involved working with concepts such as:
 
 * Structuring cinematic, story-driven landing pages
+* Web3D and in-browser 3D rendering with Three.js
 * Scroll-based animations with GSAP
 * HTML and CSS best practices for promotional pages
 * Building responsive interfaces

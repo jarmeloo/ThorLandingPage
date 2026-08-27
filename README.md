@@ -38,6 +38,7 @@ The project simulates an official movie promotional page, presenting Thor's stor
 * **CSS**
 * **JavaScript**
 * **GSAP (GreenSock)**
+* **Web3D**
 
 ## 🎨 Features
 

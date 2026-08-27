@@ -1,6 +1,6 @@
+<div align="center"> <img src="thorlogo.png" width="400" alt="ThotLogo" /> </div>
+
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:8B0000&height=200&section=header&text=Thor%20Landing%20Page&fontSize=40&fontColor=ffffff&fontAlignY=38&descAlignY=58&descColor=a8d5a2" />
-</div>
 
 <div align="center">
 

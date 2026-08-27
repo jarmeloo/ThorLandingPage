@@ -1,5 +1,4 @@
-<div align="center"> <img src="thorlogo.png" width="400" alt="ThotLogo" /> </div>
-<div align="center">
+<div align="center"> <img src="thorlogo.png" width="400" alt="ThorLogo" /> </div>
 
 <div align="center">
 

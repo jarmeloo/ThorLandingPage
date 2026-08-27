@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thor: O Deus do Trovão</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/hammer-logo.png">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/img/hero-bg.webp" />
+    <link rel="preload" as="image" href="assets/img/hammer-logo.png" />
+    <link rel="preload" as="image" href="assets/img/footer-bg.webp" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== SCROLL SMOOTHER WRAPPER ===== -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+          <div class="hero__bg">
+            <img
+              class="hero__poster"
+              src="assets/img/hero-bg.webp"
+              alt=""
+              width="1920"
+              height="1080"
+            />
+            <video
+              class="hero__video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="none"
+            >
+              <source data-src="assets/video-hero.mp4" type="video/mp4" />
+            </video>
+            <div class="hero__gradient"></div>
+          </div>
+
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <a href="#hero" class="nav__logo">
+              <img src="assets/img/hammer-logo.png" alt="Thor" />
+            </a>
+            <div class="nav__links">
+              <a href="#trailer" class="nav__link">TRAILER</a>
+              <a href="#sobre" class="nav__link">SOBRE</a>
+              <a href="#ingressos" class="nav__link">INGRESSOS</a>
+            </div>
+          </nav>
+
+          <!-- Hero Content -->
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title tituloAnimado">Thor</h1>
+              <p class="hero__subtitle">
+              Filho de Odin. Deus do Trovão. 
+              Quando a tempestade chega, não existe ninguém mais disposto a enfrentá-la.
+              </p>
+            </div>
+            <div class="hero__buttons">
+              <a href="#ingressos" class="btn btn--solid"
+                >GARANTA SEU INGRESSO</a
+              >
+              <a href="#trailer" class="btn btn--outline">ASSISTA AO TRAILER</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== VIDEO SECTION ===== -->
+        <section class="video-section" id="trailer">
+          <div
+            class="video-player"
+            role="button"
+            tabindex="0"
+            aria-label="Reproduzir trailer"
+          >
+            <video
+              class="video-player__video"
+              muted
+              loop
+              playsinline
+              preload="none"
+              poster="assets/img/trailer.webp"
+            >
+              <source data-src="assets/trailer.mp4" type="video/mp4" />
+            </video>
+            <div class="video-player__overlay">
+              <button class="video-player__btn" aria-label="Play">
+                <svg
+                  viewBox="0 0 125 125"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="62.5"
+                    cy="62.5"
+                    r="60"
+                    stroke="rgba(255,255,255,0.5)"
+                    stroke-width="2.5"
+                  />
+                  <polygon
+                    points="50,35 95,62.5 50,90"
+                    fill="rgba(255,255,255,0.7)"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== CONTENT SECTIONS ===== -->
+        <section class="content" id="sobre">
+          <!-- 3D Hammer Canvas -->
+          <div id="hammer-canvas" class="div3d" aria-hidden="true"></div>
+          <div class="content__bg" aria-hidden="true">
+            <img data-src="assets/bg-secoes.webp" alt="" class="lazy-img" />
+          </div>
+
+          <!-- Row 1: Text left, 3D space right -->
+          <div class="content__row content__row--1">
+            <p class="content__text content__text--left textoAnimado">
+              Thor Odinson não é apenas um guerreiro. É o filho de Odin, o
+              portador do Mjolnir, o trovão que ecoa pelos Nove Reinos.
+            </p>
+          </div>
+
+          <!-- Row 2: 3D space left, Text right -->
+          <div class="content__row content__row--2">
+            <p class="content__text content__text--right textoAnimado">
+              Quando a escuridão ameaça consumir tudo, não há exército, não há
+              estratégia
+            </p>
+          </div>
+
+          <!-- Row 3: Text center, 3D wide below -->
+          <div class="content__row content__row--3">
+            <p class="content__text content__text--center textoAnimado">
+              Há apenas ele, o martelo, e a tempestade que carrega dentro de si.
+            </p>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta" id="ingressos">
+          <div class="cta__bg" aria-hidden="true">
+            <img
+              class="cta__poster"
+              src="assets/img/footer-bg.webp"
+              alt=""
+              width="1920"
+              height="1080"
+            />
+            <video
+              class="cta__video"
+              muted
+              loop
+              playsinline
+              preload="none"
+            >
+              <source data-src="assets/video-footer.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="cta__content">
+            <div class="cta__text-group">
+              <h2 class="cta__title tituloAnimado">A TEMPESTADE CHEGA AOS CINEMAS</h2>
+              <p class="cta__subtitle">
+                Uma vez na vida, você assiste a algo que não esquece. Esse é o
+                momento.
+              </p>
+            </div>
+            <div class="cta__buttons">
+              <a href="#" class="btn btn--solid">GARANTA SEU INGRESSO</a>
+              <a href="#" class="btn btn--outline">ASSISTA AO TRAILER</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader" aria-label="Carregando">
+      <div class="preloader__content">
+        <div class="preloader__hammer-wrap">
+          <div class="preloader__hammer-outline"></div>
+          <div class="preloader__hammer-fill"></div>
+        </div>
+        <span class="preloader__percent">0%</span>
+      </div>
+    </div>
+
+    
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="js/main.js" defer></script>
+    <script type="module" src="js/hammer3d.js"></script>
+  </body>
+</html>

@@ -1,8 +1,3 @@
-/* ================================================================
-   THOR: RAGNAROK — Main JavaScript
-   Handles: Preloader, Video Player, Lazy Loading
-   ================================================================ */
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 function initSmoother() {
@@ -11,6 +6,8 @@ function initSmoother() {
       smooth: 2,
       effects: true,
     });
+  } else {
+    ScrollTrigger.normalizeScroll(true);
   }
   ScrollTrigger.refresh();
 }
